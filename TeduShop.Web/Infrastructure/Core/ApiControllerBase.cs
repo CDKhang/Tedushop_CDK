@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -15,6 +13,7 @@ namespace TeduShop.Web.Infrastructure.Core
     public class ApiControllerBase : ApiController
     {
         private IErrorService _errorService;
+
         public ApiControllerBase(IErrorService errorService)
         {
             this._errorService = errorService;
